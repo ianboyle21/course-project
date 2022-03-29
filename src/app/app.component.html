@@ -1,14 +1,14 @@
 <div class="container">
-  <app-header></app-header>
+  <app-header  (featureSelected)="toggleFeature($event)"></app-header>
   <div class="row">
     <div class="col-md-12">
-      <h2>Im Working</h2>
+      <h2>Welcome</h2>
     </div>
     <div class="col-md-12">
-      <app-recipes></app-recipes>
+      <app-recipes *ngIf="toggleShow"></app-recipes>
     </div>
   </div>
   <div class="col-md-12">
-    <app-shopping-list></app-shopping-list>
+    <app-shopping-list *ngIf="!toggleShow"></app-shopping-list>
   </div>
-</div>
+</div>  

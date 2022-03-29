@@ -9,10 +9,6 @@ import { Recipe } from './recipe.model';
 export class RecipesComponent implements OnInit {
   
   displayedRecipe: Recipe;
-  loadRecipe(recipe: Recipe){
-    this.displayedRecipe = recipe;
-    console.log("From Recipe: ", this.displayedRecipe)
-  }
   constructor() { }
 
   ngOnInit(): void {

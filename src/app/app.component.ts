@@ -7,14 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course-project';
-  toggleShow = false;
-  something(toggleShowRecipe) {
-    this.toggleShow = toggleShowRecipe
-    return this.toggleShow;
-  }
+  loadedFeature = 'recipe';
 
   toggleFeature(feature: string) {
-    console.log(feature)
-    feature === "recipe" ? this.toggleShow = true : this.toggleShow = false;
+    this.loadedFeature = feature;
   }
 }

@@ -11,10 +11,10 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
  public recipes: Recipe[] = [];
 
-  @Output() loadedRecipe = new EventEmitter<Recipe>() ;
-  loadRecipe(recipe: Recipe){
-    this.loadedRecipe.emit(recipe)
-  }
+  // @Output() loadedRecipe = new EventEmitter<Recipe>();
+  // loadRecipe(recipe: Recipe){
+  //   this.loadedRecipe.emit(recipe)
+  // }
   constructor(private _recipeService: RecipesService) { }
 
   ngOnInit(): void {
